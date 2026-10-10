@@ -1,0 +1,6 @@
+{
+  "name": "AK Digital Studio",
+  "description": "Production-grade B2B enterprise UX, startup MVP acceleration, and scalable design systems by AK Digital Studio, Hyderabad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

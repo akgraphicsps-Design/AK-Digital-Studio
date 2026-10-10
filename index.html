@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AK Digital Studio | B2B Enterprise UX & Design Systems</title>
+    <meta name="description" content="Production-grade B2B enterprise UX, startup MVP acceleration, and scalable design systems by AK Digital Studio, Hyderabad." />
+    <meta property="og:title" content="AK Digital Studio | B2B Enterprise UX & Design Systems" />
+    <meta property="og:description" content="Production-grade B2B enterprise UX, startup MVP acceleration, and scalable design systems by AK Digital Studio, Hyderabad." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- ====================================================================
+         TOP NAVIGATION BAR (Strict 3-Zone Contract)
+         Zone 1: Brand Wordmark (one line)
+         Zone 2: 4-5 Navigation Links (single line, no pills)
+         Zone 3: 1 Primary CTA Button
+         ==================================================================== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <!-- Zone 1: Single text element wordmark -->
+        <a href="#hero" class="brand-wordmark" aria-label="AK Digital Studio Home">
+          <span class="brand-icon" aria-hidden="true">AK</span>
+          <span>AK Digital Studio</span>
+        </a>
+
+        <!-- Zone 2: 4-5 Clean single-line text navigation links -->
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#expertise" class="nav-link">Expertise</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="./design-system.html" class="nav-link">Design System</a>
+        </nav>
+
+        <!-- Zone 3: 1 Primary action -->
+        <div class="header-actions">
+          <button class="btn btn-primary btn-sm" data-open-modal="discovery">
+            Book Discovery Call
+          </button>
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+      <a href="#expertise" class="nav-link">Expertise</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="./design-system.html" class="nav-link">Design System Living Atlas</a>
+      <button class="btn btn-primary btn-full" data-open-modal="discovery" style="margin-top: 12px;">
+        Book Discovery Call
+      </button>
+    </div>
+
+    <main>
+      <!-- ==================================================================
+           01. HERO SECTION (Split Composition)
+           ================================================================== -->
+      <section id="hero" class="section-hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <span class="text-kicker">Research-driven · Scale-focused</span>
+              <h1 class="text-hero-xl">
+                High-performance UX for enterprise platforms and fast-moving startups.
+              </h1>
+              <p class="text-lead">
+                We engineer mission-critical interfaces for enterprise SaaS, multi-currency fintech, and funded startups launching scalable MVPs from day zero. Headquartered in Hyderabad's tech corridor, delivering global excellence to international teams.
+              </p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" data-open-modal="discovery">
+                  Book a Discovery Call
+                </button>
+                <a href="./design-system.html" class="btn btn-secondary">
+                  Explore Design Systems
+                </a>
+              </div>
+
+              <!-- Unboxed Trust Metadata (Zero-Pill Compliance) -->
+              <div class="hero-trust-bar">
+                <div class="meta-unboxed">
+                  <span>HITEC City & Gachibowli HQ</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>SF / London / Singapore Delivery</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>100% Code-Aligned Tokens</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Visual Card with High-Res Studio Asset -->
+            <div class="hero-visual-card">
+              <img 
+                src="./assets/images/hero_ux_studio.jpg" 
+                alt="AK Digital Studio design architects engineering enterprise software interfaces in modern studio environment"
+                loading="eager"
+              />
+              <div class="hero-visual-overlay">
+                <p style="font-size: 0.9375rem; font-weight: 600; margin-bottom: 2px;">HITEC City Design Laboratory</p>
+                <p style="font-size: 0.8125rem; opacity: 0.85;">Principal UX research & token engineering center</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Authority Metrics Strip (Positioned directly below Hero) -->
+          <div class="stats-strip">
+            <div class="stat-item">
+              <span class="stat-value tabular-nums">$14.2M</span>
+              <span class="stat-label">Weekly Managed Liquidity</span>
+              <span class="stat-desc">Transacted across client fintech consoles</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value tabular-nums">55%</span>
+              <span class="stat-label">Faster Engineering Handoff</span>
+              <span class="stat-desc">Zero ambiguity via tokenized design systems</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value tabular-nums">99.4%</span>
+              <span class="stat-label">Routing & Task Compliance</span>
+              <span class="stat-desc">Measured across enterprise logistics users</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value tabular-nums">3-4 Wks</span>
+              <span class="stat-label">Day-Zero MVP Velocity</span>
+              <span class="stat-desc">From initial brief to production-ready design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           02. BENTO GRID / CORE PILLARS
+           ================================================================== -->
+      <section id="expertise" class="section">
+        <div class="container">
+          <div style="max-width: 680px;">
+            <span class="text-kicker">Core Specialization</span>
+            <h2 class="text-h1" style="margin-top: 8px;">
+              Engineered for scale. Built for real operators.
+            </h2>
+            <p class="text-lead" style="margin-top: 12px;">
+              Consumer apps optimize for casual swipes. We design software for operators who spend eight hours a day in complex data tables, risk consoles, and operational workflows.
+            </p>
+          </div>
+
+          <div class="bento-grid">
+            <!-- Bento 1: Enterprise B2B UX (8 Columns) -->
+            <div class="bento-card bento-col-8 bento-card-highlight">
+              <div>
+                <span class="badge badge-primary" style="margin-bottom: 16px;">Enterprise Focus</span>
+                <h3 class="text-h2" style="color: var(--color-primary-default);">
+                  B2B Enterprise UX & High-Density Workflows
+                </h3>
+                <p class="text-body-lg" style="color: var(--color-text-muted); margin-top: 12px; max-width: 600px;">
+                  We eliminate cognitive friction in massive multi-tenant architectures, regulatory compliance dashboards, and treasury desks. Every micro-interaction is tuned for maximum information density without visual exhaustion.
+                </p>
+                <div class="meta-unboxed" style="margin-top: 24px;">
+                  <span>Tabular Numerals</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>Keyboard-First Hotkeys</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>Sub-200ms Latency Feedback</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>Role-Based Access Layouts</span>
+                </div>
+              </div>
+              <div style="margin-top: 32px; display: flex; align-items: center; justify-content: space-between;">
+                <span style="font-size: 0.875rem; font-weight: 600; color: var(--color-primary-default);">Tested with 5,000+ daily operational analysts</span>
+                <a href="#work" class="btn btn-tertiary btn-sm">View FinTech Proof &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Bento 2: Day-Zero MVP Acceleration (4 Columns) -->
+            <div class="bento-card bento-col-4">
+              <div>
+                <span class="badge badge-accent" style="margin-bottom: 16px;">Venture Velocity</span>
+                <h3 class="text-h3" style="color: var(--color-text-main);">
+                  Day-Zero Startup MVPs
+                </h3>
+                <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 12px;">
+                  For funded founders who cannot afford false starts. We construct production-ready interactive prototypes, user journeys, and pitch-deck deliverables in 3-week sprint cadences.
+                </p>
+              </div>
+              <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--color-border-slate);">
+                <div class="stat-value tabular-nums" style="font-size: 1.5rem;">21 Days</div>
+                <div class="stat-desc">Average time to investor-ready design validation</div>
+              </div>
+            </div>
+
+            <!-- Bento 3: Design System Architecture (5 Columns) -->
+            <div class="bento-card bento-col-5">
+              <div>
+                <span class="badge badge-neutral" style="margin-bottom: 16px;">Engineering Alignment</span>
+                <h3 class="text-h3" style="color: var(--color-text-main);">
+                  Design System Token Engineering
+                </h3>
+                <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 12px;">
+                  Never lose fidelity between Figma and code. We author unified JSON design token trees that synchronize directly with CSS variables, Tailwind, and React design components.
+                </p>
+              </div>
+              <div style="margin-top: 24px;">
+                <a href="./design-system.html" class="btn btn-secondary btn-full btn-sm">
+                  Launch Component Atlas v3.2 &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Bento 4: Global Delivery from Hyderabad (7 Columns) -->
+            <div class="bento-card bento-col-7">
+              <div>
+                <span class="badge badge-accent" style="margin-bottom: 16px;">Geographic Advantage</span>
+                <h3 class="text-h3" style="color: var(--color-text-main);">
+                  Global Enterprise Rigor · Hyderabad Proximity
+                </h3>
+                <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 12px;">
+                  Located within walking distance of Google, Microsoft, and Amazon campuses in HITEC City and Gachibowli, we bring top-tier Indian engineering synergy to international clients across US Eastern, Pacific, and European time zones.
+                </p>
+                <div class="meta-unboxed" style="margin-top: 16px;">
+                  <span>Direct Principal Access</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>4-Hour Overlap with UK/US</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>Strict NDA & IP Protection</span>
+                </div>
+              </div>
+              <div style="margin-top: 24px;">
+                <button class="btn btn-primary btn-sm" data-open-modal="discovery">Schedule Local or Global Call</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           03. PROOF OF WORK / CASE STUDIES
+           ================================================================== -->
+      <section id="work" class="section">
+        <div class="container">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+            <div style="max-width: 600px;">
+              <span class="text-kicker">Proof of Work</span>
+              <h2 class="text-h1" style="margin-top: 8px;">
+                Measurable outcomes. Zero decorative fluff.
+              </h2>
+              <p class="text-lead" style="margin-top: 12px;">
+                Every project is verified by measurable business metrics and concrete software velocity gains.
+              </p>
+            </div>
+
+            <!-- Interactive Filter Tabs -->
+            <div class="filter-tabs" role="tablist" aria-label="Case Study Filters">
+              <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Case Studies</button>
+              <button class="filter-tab" data-filter="enterprise" role="tab" aria-selected="false">Enterprise B2B</button>
+              <button class="filter-tab" data-filter="startup" role="tab" aria-selected="false">Startup MVPs</button>
+              <button class="filter-tab" data-filter="systems" role="tab" aria-selected="false">Design Systems</button>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <!-- Case Study 1: FinTech Treasury -->
+            <article class="case-card" data-category="enterprise">
+              <div class="case-media">
+                <img 
+                  src="./assets/images/fintech_enterprise_ui.jpg" 
+                  alt="Zenith Treasury multi-currency liquidity console interface designed by AK Digital Studio"
+                  loading="lazy"
+                />
+              </div>
+              <div class="case-body">
+                <div class="meta-unboxed">
+                  <span>Zenith Corp · London / New York</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>B2B FinTech</span>
+                </div>
+                <h3 class="text-h3" style="color: var(--color-primary-default);">
+                  Multi-Currency Liquidity & FX Treasury Platform
+                </h3>
+                <p class="text-body-std" style="color: var(--color-text-muted);">
+                  Replaced 47 fragmented banking spreadsheets with a unified real-time liquidity desk managing $14.2M weekly cross-border transactions.
+                </p>
+
+                <div class="case-metric-box">
+                  <span class="case-metric-val tabular-nums">+320%</span>
+                  <span class="case-metric-lbl">Daily Active User Adoption & 42% Latency Drop</span>
+                </div>
+
+                <div style="margin-top: auto; padding-top: 12px;">
+                  <button class="btn btn-secondary btn-full btn-sm" data-case-slug="fintech">
+                    View Architecture Specs &rarr;
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Case Study 2: Logistics & Fleet Routing MVP -->
+            <article class="case-card" data-category="startup">
+              <div class="case-media">
+                <img 
+                  src="./assets/images/logistics_fleet_mvp.jpg" 
+                  alt="Global Route AI autonomous supply chain telemetry dashboard designed by AK Digital Studio"
+                  loading="lazy"
+                />
+              </div>
+              <div class="case-body">
+                <div class="meta-unboxed">
+                  <span>Maritime Freight · Singapore</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>Autonomous Logistics</span>
+                </div>
+                <h3 class="text-h3" style="color: var(--color-primary-default);">
+                  Autonomous Maritime Fleet & Route Telemetry
+                </h3>
+                <p class="text-body-std" style="color: var(--color-text-muted);">
+                  Constructed a dark mode geospatial interface for global dispatchers navigating 1,200+ container vessels across high-stress oceanic nodes.
+                </p>
+
+                <div class="case-metric-box">
+                  <span class="case-metric-val tabular-nums">99.4%</span>
+                  <span class="case-metric-lbl">On-Time Routing Compliance & 4-Wk MVP Launch</span>
+                </div>
+
+                <div style="margin-top: auto; padding-top: 12px;">
+                  <button class="btn btn-secondary btn-full btn-sm" data-case-slug="logistics">
+                    View Architecture Specs &rarr;
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Case Study 3: Design System Atlas -->
+            <article class="case-card" data-category="systems">
+              <div class="case-media">
+                <img 
+                  src="./assets/images/design_system_atlas.jpg" 
+                  alt="Aurora Enterprise multi-brand token system atlas designed by AK Digital Studio"
+                  loading="lazy"
+                />
+              </div>
+              <div class="case-body">
+                <div class="meta-unboxed">
+                  <span>TechEngine · Hyderabad / SF</span>
+                  <span class="meta-separator" aria-hidden="true">·</span>
+                  <span>Design System</span>
+                </div>
+                <h3 class="text-h3" style="color: var(--color-primary-default);">
+                  Aurora Multi-Brand Enterprise Component Atlas
+                </h3>
+                <p class="text-body-std" style="color: var(--color-text-muted);">
+                  Unified three divergent enterprise product units into a single synchronized token architecture spanning Figma, CSS variables, and React components.
+                </p>
+
+                <div class="case-metric-box">
+                  <span class="case-metric-val tabular-nums">55%</span>
+                  <span class="case-metric-lbl">Acceleration in Developer Shipping Cadence</span>
+                </div>
+
+                <div style="margin-top: auto; padding-top: 12px;">
+                  <button class="btn btn-secondary btn-full btn-sm" data-case-slug="design_system">
+                    View Architecture Specs &rarr;
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           04. STRATEGIC DIFFERENTIATION
+           ================================================================== -->
+      <section class="section" style="background-color: #FFFFFF;">
+        <div class="container">
+          <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+            <span class="text-kicker">Why AK Digital Studio</span>
+            <h2 class="text-h1" style="margin-top: 8px;">
+              Built by practitioners, not slide deck consultants.
+            </h2>
+            <p class="text-lead" style="margin-top: 12px;">
+              Four non-negotiable principles that protect your product from technical debt and design stagnation.
+            </p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px;">
+            <div style="padding: 24px; border: 1px solid var(--color-border-slate); border-radius: var(--radius-lg); background-color: var(--color-canvas);">
+              <h3 class="text-h4" style="color: var(--color-primary-default); margin-bottom: 8px;">01. Cognitive Load Reduction</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                We organize information visually so operators make faster decisions under pressure. No decorative clutter to distract from vital metrics.
+              </p>
+            </div>
+
+            <div style="padding: 24px; border: 1px solid var(--color-border-slate); border-radius: var(--radius-lg); background-color: var(--color-canvas);">
+              <h3 class="text-h4" style="color: var(--color-primary-default); margin-bottom: 8px;">02. Code-Aligned Tokens</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Our Figma styles translate 1:1 into CSS Custom Properties and Tailwind tokens. Engineering teams implement our handoffs without guesswork.
+              </p>
+            </div>
+
+            <div style="padding: 24px; border: 1px solid var(--color-border-slate); border-radius: var(--radius-lg); background-color: var(--color-canvas);">
+              <h3 class="text-h4" style="color: var(--color-primary-default); margin-bottom: 8px;">03. Measurable ROI Focus</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                We tie UX deliverables directly to reduced support ticket volume, faster task execution times, and higher conversion rates.
+              </p>
+            </div>
+
+            <div style="padding: 24px; border: 1px solid var(--color-border-slate); border-radius: var(--radius-lg); background-color: var(--color-canvas);">
+              <h3 class="text-h4" style="color: var(--color-primary-default); margin-bottom: 8px;">04. Direct Principal Access</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                You work directly with principal design architects. No account executive intermediaries or junior designers learning on your dime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           05. AGILE PROCESS ("Create. Strategize. Scale.")
+           ================================================================== -->
+      <section id="process" class="section">
+        <div class="container">
+          <div style="max-width: 640px;">
+            <span class="text-kicker">Delivery Framework</span>
+            <h2 class="text-h1" style="margin-top: 8px;">
+              Create. Strategize. Scale.
+            </h2>
+            <p class="text-lead" style="margin-top: 12px;">
+              A four-step agile methodology engineered for predictable delivery, zero scope bloat, and airtight engineering handoffs.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-step">
+              <span class="step-num">PHASE 01</span>
+              <h3 class="text-h4" style="color: var(--color-primary-default);">Discovery & Architecture</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                We analyze domain workflows, review current system bottlenecks, conduct operator interviews, and map complete information architecture.
+              </p>
+              <div class="meta-unboxed" style="margin-top: auto; font-size: 0.75rem;">
+                <span>Deliverable: Mental model diagrams & IA maps</span>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="step-num">PHASE 02</span>
+              <h3 class="text-h4" style="color: var(--color-primary-default);">Low-Fidelity Validation</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Rapid structural wireframing to stress-test high-density tables, multi-step wizards, and responsive viewport breakpoints before styling.
+              </p>
+              <div class="meta-unboxed" style="margin-top: auto; font-size: 0.75rem;">
+                <span>Deliverable: Clickable structural prototype</span>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="step-num">PHASE 03</span>
+              <h3 class="text-h4" style="color: var(--color-primary-default);">High-Fidelity & Tokens</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Application of the design system: 14 typographic roles, WCAG AA audited contrast, micro-interactions, and exhaustive empty/error states.
+              </p>
+              <div class="meta-unboxed" style="margin-top: auto; font-size: 0.75rem;">
+                <span>Deliverable: Pixel-perfect Figma design spec</span>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="step-num">PHASE 04</span>
+              <h3 class="text-h4" style="color: var(--color-primary-default);">Production Handoff & QA</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Export of design tokens (JSON/CSS), interactive component atlas, developer pairing sessions, and bi-weekly build auditing until launch.
+              </p>
+              <div class="meta-unboxed" style="margin-top: auto; font-size: 0.75rem;">
+                <span>Deliverable: Production-ready CSS/Storybook support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           06. SERVICES GRID (6 Specialized Capabilities)
+           ================================================================== -->
+      <section id="services" class="section" style="background-color: #FFFFFF;">
+        <div class="container">
+          <div style="max-width: 680px;">
+            <span class="text-kicker">Capabilities</span>
+            <h2 class="text-h1" style="margin-top: 8px;">
+              Specialized services tailored for high-stakes software.
+            </h2>
+            <p class="text-lead" style="margin-top: 12px;">
+              Whether overhauling a legacy enterprise application or building an MVP from day zero, we bring specialized expertise.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <h3 class="text-h3">Enterprise SaaS & Dashboard Redesign</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Modernizing complex, legacy B2B workflows with clear visual hierarchy, multi-step approvals, keyboard shortcuts, and responsive data matrices.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="text-h3">Day-Zero MVP Acceleration</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Rapid 3-to-4-week design sprints taking venture-backed founders from napkin conceptualization to investor-ready, developer-aligned prototypes.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <h3 class="text-h3">Multi-Brand Design System Tokens</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Scalable component libraries with semantic token structures (colors, elevation, radii, typography) maintaining absolute parity with React code.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="text-h3">High-Density Data Visualization</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Transforming chaotic telemetry, multi-currency balances, and operational metrics into legible, interactive graphs and tabular interfaces.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="text-h3">Ethnographic Research & Usability Audits</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                Observing real domain operators in their native workflows to uncover hidden drop-off points, ergonomic pain triggers, and speed blockers.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="text-h3">Engineering Pairing & Frontend QA</h3>
+              <p class="text-body-std" style="color: var(--color-text-muted);">
+                We don't vanish after Figma signoff. Our design leads review pull requests, audit live staging builds, and ensure 100% token fidelity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           07. INTERACTIVE PROJECT SCOPING & VELOCITY ESTIMATOR
+           ================================================================== -->
+      <section class="section">
+        <div class="container">
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-border-slate); border-radius: var(--radius-lg); padding: 48px;">
+            <div style="max-width: 600px;">
+              <span class="text-kicker">Timeline & Team Estimator</span>
+              <h2 class="text-h2" style="margin-top: 8px;">
+                Calculate project velocity and sprint scope.
+              </h2>
+              <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+                Select your product profile to see realistic delivery timelines based on our historical sprint metrics.
+              </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 36px; align-items: center;">
+              <div>
+                <div class="form-group">
+                  <label class="form-label" for="calc-type">Primary Project Requirement</label>
+                  <select id="calc-type" class="form-select">
+                    <option value="enterprise" selected>B2B Enterprise SaaS Redesign</option>
+                    <option value="mvp">Day-Zero Funded Startup MVP</option>
+                    <option value="design_system">Design System Architecture & Tokens</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="calc-scope">Scope Depth</label>
+                  <select id="calc-scope" class="form-select">
+                    <option value="full" selected>End-to-End (Research, High-Fi, Handoff)</option>
+                    <option value="audit">UX Audit & Architectural Strategy Only</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="calc-timeline">Delivery Cadence</label>
+                  <select id="calc-timeline" class="form-select">
+                    <option value="standard" selected>Standard Enterprise Velocity</option>
+                    <option value="rush">Accelerated Venture Sprint (High Speed)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="background-color: var(--color-canvas); border: 1px solid var(--color-border-slate); border-radius: var(--radius-md); padding: 32px;">
+                <div class="text-kicker" style="font-size: 0.75rem;">Estimated Delivery Parameters</div>
+                <div style="margin-top: 16px;">
+                  <span style="font-size: 0.875rem; color: var(--color-text-muted);">Estimated Project Duration:</span>
+                  <div id="calc-result-weeks" class="stat-value tabular-nums" style="font-size: 2rem; color: var(--color-primary-default);">
+                    8 Weeks
+                  </div>
+                </div>
+
+                <div style="margin-top: 16px;">
+                  <span style="font-size: 0.875rem; color: var(--color-text-muted);">Sprint Structure:</span>
+                  <div id="calc-result-sprints" style="font-size: 1.125rem; font-weight: 600; color: var(--color-text-main);">
+                    4 Sprints (Bi-weekly)
+                  </div>
+                </div>
+
+                <div style="margin-top: 16px;">
+                  <span style="font-size: 0.875rem; color: var(--color-text-muted);">Dedicated Team Model:</span>
+                  <div id="calc-result-team" style="font-size: 0.9375rem; font-weight: 500; color: var(--color-secondary-dark); margin-top: 2px;">
+                    1 Principal UX Architect + 1 Design Systems Engineer + 1 Researcher
+                  </div>
+                </div>
+
+                <div style="margin-top: 24px;">
+                  <button class="btn btn-primary btn-full btn-sm" data-open-modal="discovery">
+                    Lock In This Delivery Window &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           08. FAQ ACCORDION (Figma System Atlas Spec)
+           ================================================================== -->
+      <section id="faq" class="section">
+        <div class="container">
+          <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+            <span class="text-kicker">Clarifications</span>
+            <h2 class="text-h1" style="margin-top: 8px;">
+              Frequently asked questions.
+            </h2>
+            <p class="text-lead" style="margin-top: 12px;">
+              Straightforward answers on working models, geographic coordination, handoffs, and pricing.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <!-- FAQ 1 -->
+            <div class="faq-item" data-open="true">
+              <button class="faq-question" aria-expanded="true">
+                <span>How do you handle time zone differences between Hyderabad and international clients?</span>
+                <span class="faq-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="faq-answer">
+                We operate on an asynchronous-first communication cadence with structured 4-to-5 hour synchronous overlap windows every business day. For US clients (EST/PST), we align on early evening IST standups; for European (GMT/CET) and APAC clients, we share full business-day overlap. You receive daily Loom async walkthroughs and Slack/Teams updates.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item" data-open="false">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do your designs translate into engineering code without loss of fidelity?</span>
+                <span class="faq-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="faq-answer">
+                We don't just supply static Figma mockups. We deliver automated Design Token trees (CSS custom properties and Tailwind presets), interactive HTML/React living specs, and strict WCAG AA contrast rules. We pair with your frontend engineers during sprint zero to ensure tokens map 1:1 with your codebase.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item" data-open="false">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can you redesign an existing enterprise monolith without disrupting active users?</span>
+                <span class="faq-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="faq-answer">
+                Yes. We execute phased strangler-pattern redesigns. Rather than a risky all-at-once overhaul, we isolate high-friction workflows (e.g. search, multi-currency payments, filtering) and design modular improvements that your development team can deploy incrementally behind feature flags.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item" data-open="false">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is the engagement model: fixed fee or dedicated monthly retainer?</span>
+                <span class="faq-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="faq-answer">
+                For defined scopes (such as Day-Zero MVP launches or Design System foundations), we provide transparent, fixed-scope milestone deliverables. For ongoing product evolution and dedicated enterprise scaling, we offer dedicated monthly sprint retainers with guaranteed capacity.
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item" data-open="false">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do we own the intellectual property and design source files?</span>
+                <span class="faq-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="faq-answer">
+                100% yes. Upon milestone completion, full ownership of all Figma source files, vector components, design tokens, and documentation transfers unconditionally to your company under mutual NDA and IP assignment contracts.
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item" data-open="false">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can we visit your studio in Hyderabad for an in-person discovery workshop?</span>
+                <span class="faq-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="faq-answer">
+                Absolutely. Our studio is located in the heart of Hyderabad's HITEC City / Gachibowli tech corridor. We frequently host multi-day executive design sprints and architectural alignment workshops for visiting leadership teams.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           09. CTA BANNER & CONVERSION SECTION
+           ================================================================== -->
+      <section class="section" style="padding-top: 0; border-bottom: none;">
+        <div class="container">
+          <div class="cta-banner">
+            <div class="cta-content">
+              <span class="text-kicker" style="color: var(--color-secondary-light);">Immediate Availability</span>
+              <h2 class="text-h1" style="color: #FFFFFF;">
+                Ready for a clearer, scalable design foundation?
+              </h2>
+              <p class="text-lead" style="color: #CBD5E1;">
+                Book a 30-minute discovery session with our Principal UX Architect. We’ll review your existing product, diagnose friction bottlenecks, and outline a realistic sprint roadmap.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary" data-open-modal="discovery">
+                Book a Discovery Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           10. NEWSLETTER CAPTURE (Figma Reference Pattern 04)
+           ================================================================== -->
+      <section class="section" style="background-color: #FFFFFF;">
+        <div class="container" style="max-width: 680px; text-align: center;">
+          <h3 class="text-h2">Notes worth opening.</h3>
+          <p class="text-lead" style="margin-top: 8px;">
+            Bi-weekly engineering briefs on enterprise UX architecture, token pipelines, and design system governance. No promotional spam.
+          </p>
+
+          <form id="newsletter-form" style="margin-top: 24px; text-align: left;">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <div style="flex-grow: 1; min-width: 260px;">
+                <input 
+                  type="email" 
+                  class="form-input" 
+                  placeholder="you@company.com" 
+                  required 
+                  aria-label="Work Email Address"
+                />
+                <span class="newsletter-error form-error" style="display: none; margin-top: 6px;"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Subscribe to Brief
+              </button>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 8px;">
+              By subscribing, you agree to our privacy standards. Unsubscribe at any time.
+            </p>
+          </form>
+
+          <div id="newsletter-success" style="display: none; margin-top: 24px; padding: 24px; background-color: var(--color-success-light); border: 1px solid var(--color-success-dark); border-radius: var(--radius-md); text-align: left;">
+            <div style="font-weight: 700; color: var(--color-success-dark); font-size: 1.125rem;">You're on the list.</div>
+            <p style="margin-top: 4px; font-size: 0.9375rem; color: var(--color-text-main);">
+              We'll send the next architectural brief to <strong class="confirmed-email">your email</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         11. FOOTER (Quiet, Compliant, Location Badge)
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand Info -->
+          <div class="footer-brand">
+            <a href="#hero" class="brand-wordmark">
+              <span class="brand-icon" aria-hidden="true">AK</span>
+              <span>AK Digital Studio</span>
+            </a>
+            <p class="text-body-std" style="color: var(--color-text-muted); max-width: 320px;">
+              B2B enterprise UX and scalable design system engineering. Founded and headquartered in Hyderabad, India, serving global market leaders.
+            </p>
+            <div style="margin-top: 8px;">
+              <button class="btn btn-secondary btn-sm" data-copy-email>
+                hello@akdigitalstudio.com (Copy)
+              </button>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation -->
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <ul class="footer-links">
+              <li><a href="#hero">Overview</a></li>
+              <li><a href="#expertise">Core Expertise</a></li>
+              <li><a href="#work">Case Studies</a></li>
+              <li><a href="#process">Agile Process</a></li>
+              <li><a href="#services">Services Grid</a></li>
+              <li><a href="./design-system.html">Living Design System</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Services -->
+          <div>
+            <div class="footer-col-title">Pillars</div>
+            <ul class="footer-links">
+              <li><a href="#services">Enterprise SaaS UX</a></li>
+              <li><a href="#services">Day-Zero MVP Acceleration</a></li>
+              <li><a href="#services">Design System Tokens</a></li>
+              <li><a href="#services">High-Density Data Tables</a></li>
+              <li><a href="#services">Frontend Pairing QA</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Regional & Legal -->
+          <div>
+            <div class="footer-col-title">Headquarters</div>
+            <p class="text-body-std" style="color: var(--color-text-muted); line-height: 1.6;">
+              HITEC City / Gachibowli Tech Corridor<br />
+              Hyderabad, Telangana 500081<br />
+              India
+            </p>
+            <div style="margin-top: 16px;">
+              <span class="badge badge-neutral">Serving Worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 AK Digital Studio. All rights reserved.
+          </div>
+          <div class="meta-unboxed">
+            <a href="./context.md" style="text-decoration: underline;">context.md Spec</a>
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <a href="./design-system.html" style="text-decoration: underline;">System Atlas</a>
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <span>WCAG 2.1 AA Compliant</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================================================================
+         12. INTERACTIVE MODAL: BOOK A DISCOVERY CALL
+         ==================================================================== -->
+    <div id="discovery-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+      <div class="modal-dialog">
+        <button class="modal-close" aria-label="Close dialog">&times;</button>
+        <div id="discovery-modal-content">
+          <span class="text-kicker">30-Minute Consultation</span>
+          <h3 id="modal-heading" class="text-h2" style="margin-top: 4px;">Book a Discovery Call</h3>
+          <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+            Speak directly with our Principal UX Architect. No aggressive sales pitch—just practical analysis of your product architecture.
+          </p>
+
+          <form id="discovery-form" style="margin-top: 24px;">
+            <div class="form-group">
+              <label class="form-label" for="discovery-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="discovery-name" class="form-input" placeholder="e.g. Vikram Sharma" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="discovery-email">Work Email <span class="required">*</span></label>
+              <input type="email" id="discovery-email" class="form-input" placeholder="name@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="discovery-type">Project Type</label>
+              <select id="discovery-type" class="form-select">
+                <option value="enterprise">B2B Enterprise SaaS Redesign</option>
+                <option value="mvp">Funded Startup Day-Zero MVP</option>
+                <option value="design_system">Design Token & Component System</option>
+                <option value="audit">UX Usability & Accessibility Audit</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="discovery-timezone">Your Primary Timezone</label>
+              <select id="discovery-timezone" class="form-select">
+                <option value="IST" selected>India Standard Time (IST / GMT+5:30)</option>
+                <option value="EST">US Eastern Time (EST / EDT)</option>
+                <option value="PST">US Pacific Time (PST / PDT)</option>
+                <option value="GMT">United Kingdom / Europe (GMT / CET)</option>
+                <option value="SGT">Singapore / APAC (SGT / JST)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="discovery-brief">Project Context or Challenges</label>
+              <textarea id="discovery-brief" class="form-textarea" placeholder="Briefly describe your users, workflows, and ideal timeframe..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" style="margin-top: 16px;">
+              Confirm Discovery Request
+            </button>
+          </form>
+
+          <div id="discovery-success" style="display: none; margin-top: 24px; padding: 24px; background-color: var(--color-success-light); border: 1px solid var(--color-success-dark); border-radius: var(--radius-md);">
+            <h4 style="color: var(--color-success-dark); font-weight: 700; font-size: 1.25rem;">Call Scheduled Successfully</h4>
+            <p class="confirmed-client-info" style="margin-top: 8px; font-size: 0.9375rem; color: var(--color-text-main); line-height: 1.6;">
+              A discovery invitation has been scheduled. We will reach out within 4 business hours with calendar invites.
+            </p>
+            <div style="margin-top: 16px;">
+              <button class="btn btn-secondary btn-sm" onclick="document.querySelector('#discovery-modal .modal-close').click()">
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         13. INTERACTIVE MODAL: CASE STUDY DEEP DIVE SPECS
+         ==================================================================== -->
+    <div id="case-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-case-title">
+      <div class="modal-dialog" style="max-width: 680px;">
+        <button class="modal-close" aria-label="Close dialog">&times;</button>
+        <div>
+          <span id="modal-case-domain" class="text-kicker">Domain Focus</span>
+          <h3 id="modal-case-title" class="text-h2" style="margin-top: 4px; color: var(--color-primary-default);">
+            Case Study Title
+          </h3>
+          <div id="modal-case-client" class="text-meta" style="margin-top: 4px; font-weight: 600;">
+            Client Organization
+          </div>
+
+          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 20px;">
+            <div>
+              <div style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--color-primary-default); letter-spacing: 0.05em;">
+                The Challenge & Bottleneck
+              </div>
+              <p id="modal-case-problem" class="text-body-std" style="color: var(--color-text-muted); margin-top: 4px;">
+                Problem statement
+              </p>
+            </div>
+
+            <div>
+              <div style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--color-primary-default); letter-spacing: 0.05em;">
+                Our UX Architecture & Token Solution
+              </div>
+              <p id="modal-case-solution" class="text-body-std" style="color: var(--color-text-muted); margin-top: 4px;">
+                Solution summary
+              </p>
+            </div>
+
+            <div style="padding: 16px; background-color: var(--color-canvas); border: 1px solid var(--color-border-slate); border-radius: var(--radius-sm);">
+              <div style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--color-secondary-dark); letter-spacing: 0.05em;">
+                Verified Business Outcome
+              </div>
+              <p id="modal-case-outcome" class="text-body-std" style="color: var(--color-text-main); font-weight: 600; margin-top: 4px;">
+                Outcome details
+              </p>
+            </div>
+
+            <div>
+              <div style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; color: var(--color-primary-default); letter-spacing: 0.05em;">
+                Handoff Deliverables
+              </div>
+              <p id="modal-case-deliverables" class="text-meta" style="margin-top: 4px;">
+                Deliverables summary
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; display: flex; justify-content: flex-end; gap: 12px;">
+            <button class="btn btn-secondary btn-sm" onclick="document.querySelector('#case-modal .modal-close').click()">
+              Close
+            </button>
+            <button class="btn btn-primary btn-sm" data-open-modal="discovery">
+              Request Similar Project Scope
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+  </body>
+</html>

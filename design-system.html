@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System Atlas | AK Digital Studio</title>
+    <meta name="description" content="Living UI Component Library, Design Tokens, and System Atlas for AK Digital Studio." />
+
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .specimen-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin-top: 16px;
+      }
+      .state-col {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .state-label {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+      }
+      .matrix-scroll-wrapper {
+        overflow-x: auto;
+        padding-bottom: 12px;
+      }
+      .button-matrix-row {
+        display: grid;
+        grid-template-columns: 160px repeat(6, minmax(130px, 1fr));
+        gap: 12px;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--color-border-slate);
+      }
+      .button-matrix-header {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+      }
+      .spacing-bar {
+        background-color: var(--color-primary-light);
+        height: 24px;
+        border-radius: 2px;
+        display: inline-block;
+      }
+      .code-tag {
+        font-family: var(--font-mono);
+        font-size: 0.8125rem;
+        background-color: var(--color-canvas);
+        border: 1px solid var(--color-border-slate);
+        padding: 2px 6px;
+        border-radius: var(--radius-xs);
+        color: var(--color-primary-default);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="./index.html" class="brand-wordmark">
+          <span class="brand-icon" aria-hidden="true">AK</span>
+          <span>AK Digital Studio</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="./index.html" class="nav-link">&larr; Back to Main Site</a>
+          <a href="#foundations" class="nav-link">01 Foundations</a>
+          <a href="#controls" class="nav-link">02 Controls & States</a>
+          <a href="#content" class="nav-link">03 Content Components</a>
+          <a href="#patterns" class="nav-link">04 Section Patterns</a>
+        </nav>
+
+        <div class="header-actions">
+          <span class="badge badge-accent">System Atlas v3.2</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Atlas Header Banner -->
+    <section class="atlas-header" style="margin-top: var(--header-height);">
+      <div class="container">
+        <div class="text-kicker" style="color: var(--color-secondary-light);">
+          LANDING PAGE / SYSTEM ATLAS 01 / 04 · INTER · EXISTING PALETTE
+        </div>
+        <h1 class="text-hero-l" style="margin-top: 8px;">
+          Foundations & Component Atlas
+        </h1>
+        <p class="text-lead" style="color: #CBD5E1; max-width: 800px; margin-top: 12px;">
+          A focused visual language for enterprise landing pages and B2B products. Navy, teal, and Inter assets organized into reusable decisions—not a static marketing template.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sub Navigation for Atlas Chapters -->
+    <div class="atlas-nav">
+      <div class="container" style="display: flex; gap: 12px; overflow-x: auto;">
+        <a href="#foundations" class="atlas-nav-link active">01 Foundations</a>
+        <a href="#controls" class="atlas-nav-link">02 Controls & States</a>
+        <a href="#content" class="atlas-nav-link">03 Content Components</a>
+        <a href="#patterns" class="atlas-nav-link">04 Section Patterns</a>
+      </div>
+    </div>
+
+    <main class="container">
+      <!-- ==================================================================
+           CHAPTER 01: FOUNDATIONS
+           ================================================================== -->
+      <section id="foundations" class="atlas-section">
+        <span class="text-kicker">01 Foundations</span>
+        <h2 class="text-h1" style="margin-top: 4px;">Color Inventory & Pairings</h2>
+        <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+          Click any color swatch below to copy its HEX token code directly to your clipboard.
+        </p>
+
+        <!-- 01.1 Color Inventory -->
+        <h3 class="text-h3" style="margin-top: 32px;">01.1 / Color Inventory</h3>
+        <p class="text-meta">All swatches reference production tokens. Secondary is the working accent; Primary carries actions and headings.</p>
+
+        <div class="swatch-grid">
+          <!-- Primary -->
+          <div class="swatch-card" data-hex="#071A32">
+            <div class="swatch-color" style="background-color: #071A32;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Primary / Dark</div>
+              <div class="swatch-hex">#071A32</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Pressed / deep surface</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#0B2545">
+            <div class="swatch-color" style="background-color: #0B2545;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Primary / Default</div>
+              <div class="swatch-hex">#0B2545</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">CTA / heading / focus</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#A1C3EB">
+            <div class="swatch-color" style="background-color: #A1C3EB;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Primary / Light</div>
+              <div class="swatch-hex">#A1C3EB</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Border / disabled surface</div>
+            </div>
+          </div>
+
+          <!-- Secondary -->
+          <div class="swatch-card" data-hex="#00534B">
+            <div class="swatch-color" style="background-color: #00534B;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Secondary / Dark</div>
+              <div class="swatch-hex">#00534B</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Hover / readable teal</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#00A896">
+            <div class="swatch-color" style="background-color: #00A896;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Secondary / Default</div>
+              <div class="swatch-hex">#00A896</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Accent / decorative fill</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#8BD8D0">
+            <div class="swatch-color" style="background-color: #8BD8D0;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Secondary / Light</div>
+              <div class="swatch-hex">#8BD8D0</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Hover tint / accent badge</div>
+            </div>
+          </div>
+
+          <!-- Accent -->
+          <div class="swatch-card" data-hex="#013D46">
+            <div class="swatch-color" style="background-color: #013D46;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Accent / Dark</div>
+              <div class="swatch-hex">#013D46</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Reserved emphasis</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#028090">
+            <div class="swatch-color" style="background-color: #028090;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Accent / Default</div>
+              <div class="swatch-hex">#028090</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Reserved emphasis</div>
+            </div>
+          </div>
+
+          <!-- Semantic -->
+          <div class="swatch-card" data-hex="#16A34A">
+            <div class="swatch-color" style="background-color: #16A34A;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Success / Dark</div>
+              <div class="swatch-hex">#16A34A</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Success icon / border</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#DC2626">
+            <div class="swatch-color" style="background-color: #DC2626;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Error / Dark</div>
+              <div class="swatch-hex">#DC2626</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Invalid field / error text</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#D97706">
+            <div class="swatch-color" style="background-color: #D97706;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Warning / Dark</div>
+              <div class="swatch-hex">#D97706</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Caution indicator</div>
+            </div>
+          </div>
+
+          <!-- Canvas / Base -->
+          <div class="swatch-card" data-hex="#F8FAFC">
+            <div class="swatch-color" style="background-color: #F8FAFC; border-bottom: 1px solid #E2E8F0;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Off-White</div>
+              <div class="swatch-hex">#F8FAFC</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Canvas / neutral base</div>
+            </div>
+          </div>
+
+          <div class="swatch-card" data-hex="#111111">
+            <div class="swatch-color" style="background-color: #111111;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Off-Black</div>
+              <div class="swatch-hex">#111111</div>
+              <div style="font-size: 0.6875rem; color: #64748B;">Body copy / headings</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 01.2 Approved Pairings -->
+        <h3 class="text-h3" style="margin-top: 48px;">01.2 / Approved Pairings</h3>
+        <p class="text-meta">High-legibility combinations tested for WCAG AA compliance (minimum 4.5:1 ratio).</p>
+        <div class="specimen-grid">
+          <div style="padding: 24px; background-color: var(--color-primary-default); color: #F8FAFC; border-radius: var(--radius-sm);">
+            <div style="font-size: 1.5rem; font-weight: 700;">Aa / 123</div>
+            <div style="font-size: 0.875rem; margin-top: 8px; opacity: 0.9;">Primary / Off-White</div>
+            <div style="font-size: 0.75rem; opacity: 0.75;">Main CTA and inverse sections</div>
+          </div>
+
+          <div style="padding: 24px; background-color: #F8FAFC; color: #111111; border: 1px solid var(--color-border-slate); border-radius: var(--radius-sm);">
+            <div style="font-size: 1.5rem; font-weight: 700;">Aa / 123</div>
+            <div style="font-size: 0.875rem; margin-top: 8px; color: var(--color-text-main);">Off-White / Off-Black</div>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">Long-form copy and card bodies</div>
+          </div>
+
+          <div style="padding: 24px; background-color: var(--color-secondary-tint); color: var(--color-secondary-dark); border: 1px solid var(--color-secondary-light); border-radius: var(--radius-sm);">
+            <div style="font-size: 1.5rem; font-weight: 700;">Aa / 123</div>
+            <div style="font-size: 0.875rem; margin-top: 8px;">Secondary Light / Dark</div>
+            <div style="font-size: 0.75rem; opacity: 0.85;">Badges and tinted surfaces</div>
+          </div>
+
+          <div style="padding: 24px; background-color: var(--color-success-light); color: var(--color-primary-default); border: 1px solid var(--color-success-dark); border-radius: var(--radius-sm);">
+            <div style="font-size: 1.5rem; font-weight: 700;">Aa / 123</div>
+            <div style="font-size: 0.875rem; margin-top: 8px;">Success Light / Primary</div>
+            <div style="font-size: 0.75rem; color: var(--color-text-muted);">Confirmation copy + success indicator</div>
+          </div>
+        </div>
+
+        <!-- 01.3 Inter Type Matrix -->
+        <h3 class="text-h3" style="margin-top: 48px;">01.3 / Inter Type Matrix (All 14 Roles)</h3>
+        <p class="text-meta">Strict landing page type hierarchy binding size, line-height, weight, and tracking.</p>
+
+        <div class="matrix-scroll-wrapper">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Role / Usage</th>
+                <th>Desktop Token</th>
+                <th>Mobile Token</th>
+                <th>Weight & Tracking</th>
+                <th>Live Rendering Specimen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hero Display (XL)</strong><br /><span class="text-meta">Primary hero title</span></td>
+                <td><span class="code-tag">64px / 70.4px</span></td>
+                <td><span class="code-tag">40px / 44px</span></td>
+                <td>700 Weight / -2%</td>
+                <td style="font-size: 32px; font-weight: 700; letter-spacing: -0.02em;">Clear by design</td>
+              </tr>
+              <tr>
+                <td><strong>Hero Display (L)</strong><br /><span class="text-meta">Compact hero / banner</span></td>
+                <td><span class="code-tag">52px / 59.8px</span></td>
+                <td><span class="code-tag">36px / 41.4px</span></td>
+                <td>700 Weight / -2%</td>
+                <td style="font-size: 28px; font-weight: 700; letter-spacing: -0.02em;">Start with clarity</td>
+              </tr>
+              <tr>
+                <td><strong>Section Heading (H1)</strong><br /><span class="text-meta">Major section title</span></td>
+                <td><span class="code-tag">40px / 48px</span></td>
+                <td><span class="code-tag">30px / 36px</span></td>
+                <td>700 Weight / -1.5%</td>
+                <td style="font-size: 24px; font-weight: 700; letter-spacing: -0.015em;">A considered system</td>
+              </tr>
+              <tr>
+                <td><strong>Subsection (H2)</strong><br /><span class="text-meta">Grouped feature header</span></td>
+                <td><span class="code-tag">32px / 40px</span></td>
+                <td><span class="code-tag">24px / 30px</span></td>
+                <td>600 Weight / -1%</td>
+                <td style="font-size: 20px; font-weight: 600;">Built to work together</td>
+              </tr>
+              <tr>
+                <td><strong>Card / Topic (H3)</strong><br /><span class="text-meta">Card & topic header</span></td>
+                <td><span class="code-tag">24px / 31.2px</span></td>
+                <td><span class="code-tag">20px / 26px</span></td>
+                <td>600 Weight / 0</td>
+                <td style="font-size: 18px; font-weight: 600;">A flexible starting point</td>
+              </tr>
+              <tr>
+                <td><strong>Feature Title (H4)</strong><br /><span class="text-meta">Feature title / FAQ</span></td>
+                <td><span class="code-tag">20px / 27px</span></td>
+                <td><span class="code-tag">18px / 24.3px</span></td>
+                <td>500 Weight / 0</td>
+                <td style="font-size: 17px; font-weight: 500;">Make the next step obvious</td>
+              </tr>
+              <tr>
+                <td><strong>Lead Intro Body</strong><br /><span class="text-meta">Hero / section thesis</span></td>
+                <td><span class="code-tag">20px / 32px</span></td>
+                <td><span class="code-tag">18px / 28.8px</span></td>
+                <td>400 Weight / 0</td>
+                <td style="font-size: 18px; color: var(--color-text-muted);">Give your idea room to breathe.</td>
+              </tr>
+              <tr>
+                <td><strong>Body Large</strong><br /><span class="text-meta">Intro paragraph</span></td>
+                <td><span class="code-tag">18px / 28.8px</span></td>
+                <td><span class="code-tag">16px / 25.6px</span></td>
+                <td>400 Weight / 0</td>
+                <td style="font-size: 18px;">Explain the value with specific, useful copy.</td>
+              </tr>
+              <tr>
+                <td><strong>Body Standard</strong><br /><span class="text-meta">Card body, answers, form</span></td>
+                <td><span class="code-tag">16px / 24px</span></td>
+                <td><span class="code-tag">15px / 22.5px</span></td>
+                <td>400 Weight / 0</td>
+                <td style="font-size: 16px;">Simple language. Clear structure. A useful next step.</td>
+              </tr>
+              <tr>
+                <td><strong>Primary Button</strong><br /><span class="text-meta">Main CTA action</span></td>
+                <td><span class="code-tag">18px / 21.6px</span></td>
+                <td><span class="code-tag">16px / 19.2px</span></td>
+                <td>600 Weight / +1%</td>
+                <td style="font-size: 16px; font-weight: 600; color: var(--color-primary-default);">Explore the example</td>
+              </tr>
+              <tr>
+                <td><strong>Secondary Button</strong><br /><span class="text-meta">Supporting actions</span></td>
+                <td><span class="code-tag">16px / 19.2px</span></td>
+                <td><span class="code-tag">15px / 18px</span></td>
+                <td>500 Weight / 0</td>
+                <td style="font-size: 15px; font-weight: 500;">Read the overview</td>
+              </tr>
+              <tr>
+                <td><strong>Kicker / Overline</strong><br /><span class="text-meta">Eyebrow descriptor</span></td>
+                <td><span class="code-tag">14px / 19.6px</span></td>
+                <td><span class="code-tag">13px / 18.2px</span></td>
+                <td>700 Weight / +8%</td>
+                <td style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-secondary-default);">A THOUGHTFUL START</td>
+              </tr>
+              <tr>
+                <td><strong>Caption / Badge</strong><br /><span class="text-meta">Badge & metadata label</span></td>
+                <td><span class="code-tag">14px / 19.6px</span></td>
+                <td><span class="code-tag">13px / 18.2px</span></td>
+                <td>500 Weight / 0</td>
+                <td style="font-size: 14px; font-weight: 500; color: var(--color-text-muted);">Illustrative example</td>
+              </tr>
+              <tr>
+                <td><strong>Footer Meta</strong><br /><span class="text-meta">Legal notes & copyright</span></td>
+                <td><span class="code-tag">14px / 21px</span></td>
+                <td><span class="code-tag">13px / 19.5px</span></td>
+                <td>400 Weight / 0</td>
+                <td style="font-size: 14px; color: var(--color-text-muted);">Privacy · Terms · Operational standards</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 01.4 Space, Shape & Depth -->
+        <h3 class="text-h3" style="margin-top: 48px;">01.4 / Space, Shape & Depth</h3>
+        <p class="text-meta">10 shared foundation variables. Values in px. Level 0 flat elevation with 1px hairline borders.</p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px; align-items: flex-end;">
+          <div><div class="spacing-bar" style="width: 4px;"></div><div class="text-meta" style="font-size: 0.75rem;">4px</div></div>
+          <div><div class="spacing-bar" style="width: 8px;"></div><div class="text-meta" style="font-size: 0.75rem;">8px</div></div>
+          <div><div class="spacing-bar" style="width: 12px;"></div><div class="text-meta" style="font-size: 0.75rem;">12px</div></div>
+          <div><div class="spacing-bar" style="width: 16px;"></div><div class="text-meta" style="font-size: 0.75rem;">16px</div></div>
+          <div><div class="spacing-bar" style="width: 24px;"></div><div class="text-meta" style="font-size: 0.75rem;">24px</div></div>
+          <div><div class="spacing-bar" style="width: 32px;"></div><div class="text-meta" style="font-size: 0.75rem;">32px</div></div>
+          <div><div class="spacing-bar" style="width: 48px;"></div><div class="text-meta" style="font-size: 0.75rem;">48px</div></div>
+          <div><div class="spacing-bar" style="width: 64px;"></div><div class="text-meta" style="font-size: 0.75rem;">64px</div></div>
+          <div><div class="spacing-bar" style="width: 80px;"></div><div class="text-meta" style="font-size: 0.75rem;">80px</div></div>
+          <div><div class="spacing-bar" style="width: 96px;"></div><div class="text-meta" style="font-size: 0.75rem;">96px</div></div>
+        </div>
+
+        <div style="display: flex; gap: 24px; margin-top: 32px; flex-wrap: wrap;">
+          <div style="width: 120px; height: 70px; border: 1px solid var(--color-border-dark); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.8125rem;">
+            4px Radius
+          </div>
+          <div style="width: 120px; height: 70px; border: 1px solid var(--color-border-dark); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.8125rem;">
+            8px Radius
+          </div>
+          <div style="width: 120px; height: 70px; border: 1px solid var(--color-border-dark); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 0.8125rem;">
+            16px Radius
+          </div>
+          <div style="width: 120px; height: 70px; border: 1px solid var(--color-border-dark); border-radius: 9999px; display: flex; align-items: center; justify-content: center; font-size: 0.8125rem;">
+            Pill / 9999px
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           CHAPTER 02: CONTROLS & STATES
+           ================================================================== -->
+      <section id="controls" class="atlas-section">
+        <span class="text-kicker">02 Controls & States</span>
+        <h2 class="text-h1" style="margin-top: 4px;">Buttons, Inputs & Form Elements</h2>
+        <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+          Comprehensive state matrix: Default, Hover, Pressed, Focus, Disabled, and Loading across all hierarchies.
+        </p>
+
+        <!-- Button Matrix -->
+        <h3 class="text-h3" style="margin-top: 32px;">Button State Matrix (Hierarchy × State × Viewport)</h3>
+        <div class="matrix-scroll-wrapper" style="margin-top: 16px;">
+          <!-- Header Row -->
+          <div class="button-matrix-row">
+            <span class="button-matrix-header">Variant / Scale</span>
+            <span class="button-matrix-header">Default</span>
+            <span class="button-matrix-header">Hover</span>
+            <span class="button-matrix-header">Pressed</span>
+            <span class="button-matrix-header">Focus Ring</span>
+            <span class="button-matrix-header">Disabled</span>
+            <span class="button-matrix-header">Loading</span>
+          </div>
+
+          <!-- Desktop Primary -->
+          <div class="button-matrix-row">
+            <span style="font-size: 0.8125rem; font-weight: 600;">Desktop Primary</span>
+            <div><button class="btn btn-primary btn-sm">Get started</button></div>
+            <div><button class="btn btn-primary btn-sm" style="background-color: var(--color-primary-dark);">Get started</button></div>
+            <div><button class="btn btn-primary btn-sm" style="background-color: #030D1A; transform: translateY(1px);">Get started</button></div>
+            <div><button class="btn btn-primary btn-sm" style="outline: 2px solid var(--color-primary-default); outline-offset: 2px;">Get started</button></div>
+            <div><button class="btn btn-primary btn-sm" disabled>Get started</button></div>
+            <div><button class="btn btn-primary btn-sm loading">Get started</button></div>
+          </div>
+
+          <!-- Desktop Secondary -->
+          <div class="button-matrix-row">
+            <span style="font-size: 0.8125rem; font-weight: 600;">Desktop Secondary</span>
+            <div><button class="btn btn-secondary btn-sm">Get started</button></div>
+            <div><button class="btn btn-secondary btn-sm" style="background-color: var(--color-canvas); border-color: var(--color-border-dark);">Get started</button></div>
+            <div><button class="btn btn-secondary btn-sm" style="background-color: var(--color-surface-subtle); transform: translateY(1px);">Get started</button></div>
+            <div><button class="btn btn-secondary btn-sm" style="outline: 2px solid var(--color-primary-default); outline-offset: 2px;">Get started</button></div>
+            <div><button class="btn btn-secondary btn-sm" disabled>Get started</button></div>
+            <div><button class="btn btn-secondary btn-sm loading">Get started</button></div>
+          </div>
+
+          <!-- Desktop Tertiary -->
+          <div class="button-matrix-row">
+            <span style="font-size: 0.8125rem; font-weight: 600;">Desktop Tertiary</span>
+            <div><button class="btn btn-tertiary btn-sm">Get started</button></div>
+            <div><button class="btn btn-tertiary btn-sm" style="background-color: var(--color-primary-tint);">Get started</button></div>
+            <div><button class="btn btn-tertiary btn-sm" style="background-color: #DEEAF7; transform: translateY(1px);">Get started</button></div>
+            <div><button class="btn btn-tertiary btn-sm" style="outline: 2px solid var(--color-primary-default); outline-offset: 2px;">Get started</button></div>
+            <div><button class="btn btn-tertiary btn-sm" disabled>Get started</button></div>
+            <div><button class="btn btn-tertiary btn-sm loading">Get started</button></div>
+          </div>
+        </div>
+
+        <!-- Badges Specimen -->
+        <h3 class="text-h3" style="margin-top: 48px;">Badges (Neutral, Accent & Primary)</h3>
+        <p class="text-meta">Non-interactive status/metadata indicators with clean typography.</p>
+        <div style="display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap;">
+          <span class="badge badge-neutral">Neutral · Metadata</span>
+          <span class="badge badge-accent">Accent · Highlight</span>
+          <span class="badge badge-primary">Primary · System Tier</span>
+        </div>
+
+        <!-- Form Inputs Matrix -->
+        <h3 class="text-h3" style="margin-top: 48px;">Text Input States</h3>
+        <p class="text-meta">48px minimum hit target, persistent label, clear error pairing.</p>
+        <div class="specimen-grid">
+          <div class="form-group">
+            <label class="form-label">Email address (Default)</label>
+            <input type="email" class="form-input" placeholder="you@company.com" />
+            <span class="form-helper">For occasional updates. Unsubscribe anytime.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email address (Focus)</label>
+            <input type="email" class="form-input" value="lead@enterprise.com" style="border-color: var(--color-primary-default); box-shadow: 0 0 0 2px rgba(11, 37, 69, 0.15);" />
+            <span class="form-helper">Active focus state with visible bounding ring.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email address (Error)</label>
+            <input type="email" class="form-input error" value="invalid-email" />
+            <span class="form-error">Please provide a valid work email address.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email address (Disabled)</label>
+            <input type="email" class="form-input" value="readonly@company.com" disabled />
+            <span class="form-helper">Disabled from modification.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           CHAPTER 03: CONTENT COMPONENTS
+           ================================================================== -->
+      <section id="content" class="atlas-section">
+        <span class="text-kicker">03 Content Components</span>
+        <h2 class="text-h1" style="margin-top: 4px;">Editorial & Proof Blocks</h2>
+        <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+          Standard building blocks: FAQ item, feature cards, testimonial cards, stat blocks, and pricing cards.
+        </p>
+
+        <!-- Feature Card Specimen -->
+        <h3 class="text-h3" style="margin-top: 32px;">Feature Card (Default & Hover)</h3>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 16px;">
+          <div class="bento-card">
+            <h4 class="text-h3">A Flexible Foundation</h4>
+            <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+              Start with a considered set of building blocks. Adapt the content without losing visual rhythm or structural integrity.
+            </p>
+            <div style="margin-top: 24px;">
+              <a href="#" class="btn btn-tertiary btn-sm">Explore the approach &rarr;</a>
+            </div>
+          </div>
+
+          <div class="bento-card" style="border-color: var(--color-primary-light); transform: translateY(-2px);">
+            <h4 class="text-h3">A Flexible Foundation (Hovered)</h4>
+            <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+              Start with a considered set of building blocks. Adapt the content without losing visual rhythm or structural integrity.
+            </p>
+            <div style="margin-top: 24px;">
+              <a href="#" class="btn btn-tertiary btn-sm">Explore the approach &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card Specimen -->
+        <h3 class="text-h3" style="margin-top: 48px;">Testimonial Card</h3>
+        <div style="max-width: 640px; margin-top: 16px; background-color: #FFFFFF; border: 1px solid var(--color-border-slate); border-radius: var(--radius-lg); padding: 32px;">
+          <blockquote style="font-size: 1.25rem; font-weight: 500; color: var(--color-text-main); line-height: 1.5;">
+            &ldquo;The page finally had a clear rhythm. Every section made the next step easier to understand and our developers shipped it in record time.&rdquo;
+          </blockquote>
+          <div style="margin-top: 20px; display: flex; align-items: center; gap: 12px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-primary-default); color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">
+              AL
+            </div>
+            <div>
+              <div style="font-size: 0.9375rem; font-weight: 600;">Alex Lee</div>
+              <div class="text-meta" style="font-size: 0.8125rem;">VP of Product, FinTech Operations</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Card Comparison -->
+        <h3 class="text-h3" style="margin-top: 48px;">Pricing Comparison Specimen (Default vs Featured)</h3>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 16px; max-width: 760px;">
+          <!-- Default -->
+          <div style="background-color: #FFFFFF; border: 1px solid var(--color-border-slate); border-radius: var(--radius-lg); padding: 32px; display: flex; flex-direction: column;">
+            <div style="font-size: 1.125rem; font-weight: 700;">MVP Acceleration Sprint</div>
+            <div style="font-size: 2rem; font-weight: 700; margin-top: 8px; color: var(--color-primary-default);" class="tabular-nums">
+              3 Weeks
+            </div>
+            <p class="text-meta" style="margin-top: 4px;">For funded startups launching day-zero architectures.</p>
+            <ul style="list-style: none; margin: 24px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--color-text-muted);">
+              <li>✓ Clickable Interactive Prototype</li>
+              <li>✓ Core User Flow Validation</li>
+              <li>✓ Production Design Tokens</li>
+            </ul>
+            <button class="btn btn-secondary btn-full btn-sm" style="margin-top: auto;">Select Sprint</button>
+          </div>
+
+          <!-- Featured (2px border, badge) -->
+          <div style="background-color: #FFFFFF; border: 2px solid var(--color-primary-default); border-radius: var(--radius-lg); padding: 32px; display: flex; flex-direction: column; position: relative;">
+            <span class="badge badge-accent" style="position: absolute; top: -12px; right: 24px;">Recommended</span>
+            <div style="font-size: 1.125rem; font-weight: 700;">Enterprise System Overhaul</div>
+            <div style="font-size: 2rem; font-weight: 700; margin-top: 8px; color: var(--color-primary-default);" class="tabular-nums">
+              8 Weeks
+            </div>
+            <p class="text-meta" style="margin-top: 4px;">For complex enterprise workflows & multi-tenant SaaS.</p>
+            <ul style="list-style: none; margin: 24px 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--color-text-muted);">
+              <li>✓ Complete Information Architecture</li>
+              <li>✓ High-Density Tabular UX</li>
+              <li>✓ Multi-Brand Design Token Atlas</li>
+              <li>✓ Engineering Pairing & Staging QA</li>
+            </ul>
+            <button class="btn btn-primary btn-full btn-sm" style="margin-top: auto;">Select Enterprise</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           CHAPTER 04: SECTION PATTERNS
+           ================================================================== -->
+      <section id="patterns" class="atlas-section">
+        <span class="text-kicker">04 Section Patterns</span>
+        <h2 class="text-h1" style="margin-top: 4px;">Responsive Section Recipes</h2>
+        <p class="text-body-std" style="color: var(--color-text-muted); margin-top: 8px;">
+          Standard compositional patterns that preserve reading order as rows become stacks.
+        </p>
+
+        <!-- CTA Banner Specimen -->
+        <h3 class="text-h3" style="margin-top: 32px;">CTA Banner Recipe</h3>
+        <div class="cta-banner" style="margin-top: 16px;">
+          <div class="cta-content">
+            <h3 class="text-h2" style="color: #FFFFFF;">Ready for a clearer starting point?</h3>
+            <p class="text-body-std" style="color: #CBD5E1;">
+              Choose one useful next step and make it easy for enterprise decision makers to engage.
+            </p>
+          </div>
+          <button class="btn btn-primary">Schedule Discovery</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="margin-top: 64px;">
+      <div class="container" style="text-align: center;">
+        <p class="text-meta">
+          AK Digital Studio Component Atlas &middot; Inter &middot; Existing Navy/Teal Palette &middot; Hyderabad, India
+        </p>
+        <div style="margin-top: 12px;">
+          <a href="./index.html" class="btn btn-secondary btn-sm">&larr; Return to Main Website</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast for token copy -->
+    <div class="toast"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
